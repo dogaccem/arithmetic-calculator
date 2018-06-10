@@ -1,3 +1,8 @@
+/*
+  Infix to postfix conversion and evaluate postfix expression in C 
+  Operands and operator, both must be single character.
+  Only '+'  ,  '-'  , '*', '/' and operators are expected. 
+*/
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -10,7 +15,8 @@ typedef struct STACK
     int top;
     char st[SIZE];
 }STACK;
-int abc[26];
+
+int abc[26];// Function to show results
 void initialize(STACK *);
 int isEmpty(STACK);
 int isFull(STACK);
@@ -19,7 +25,7 @@ void push(STACK *,char);
 void infixToPostfix(char *, STACK *);
 int evaluatePostfix(char* , STACK *, char *);
 void isNumber();
-int precedence(char);
+int precedence(char);// Function to verify whether an operator has higher precedence over other
 int isOperator(char);
 
 int main()
