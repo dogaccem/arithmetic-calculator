@@ -13,17 +13,17 @@ c = a * ( b + 4 ) ;
 
 c = a * ( b + 4 ) ;
 
-Postfix:a     Stack:Empty
+Postfix:a       Stack:Empty
 
-Postfix:a     Stack:*
+Postfix:a       Stack:*
 
-Postfix:a     Stack:*(
+Postfix:a       Stack:*(
 
-Postfix:ab    Stack:*(
+Postfix:ab      Stack:*(
 
-Postfix:ab    Stack:*(+
+Postfix:ab      Stack:*(+
 
-Postfix:ab4   Stack:*(+
+Postfix:ab4     Stack:*(+
 
-Postfix:ab4+* Stack:Empty
+Postfix:ab4+*   Stack:Empty
 
